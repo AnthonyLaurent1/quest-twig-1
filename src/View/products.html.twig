@@ -11,7 +11,7 @@
 
 {% for product in products %}
     {{ product }} -
-    {% if loop.index == 3 %}
+    {% if loop.index%3 == 0 %}
         <br><br>
 {%  endif %}
 {% endfor %}
